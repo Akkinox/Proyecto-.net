@@ -1,0 +1,1106 @@
+create database ONTOUR;
+go
+USE ONTOUR;
+go
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('ACTIVIDADES_EN_PAQUETE') and o.name = 'FK_ACTIVIDA_ACTIVIDAD_PAQUETE_')
+alter table ACTIVIDADES_EN_PAQUETE
+   drop constraint FK_ACTIVIDA_ACTIVIDAD_PAQUETE_
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('ACTIVIDADES_EN_PAQUETE') and o.name = 'FK_ACTIVIDA_ACTIVIDAD_ACTIVIDA')
+alter table ACTIVIDADES_EN_PAQUETE
+   drop constraint FK_ACTIVIDA_ACTIVIDAD_ACTIVIDA
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('ACTIVIDADES_REALIZA_CLIENTE') and o.name = 'FK_ACTIVIDA_ACTIVIDAD_CURSO')
+alter table ACTIVIDADES_REALIZA_CLIENTE
+   drop constraint FK_ACTIVIDA_ACTIVIDAD_CURSO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('ACTIVIDADES_REALIZA_CLIENTE') and o.name = 'FK_ACTIVIDA_CLIENTE')
+alter table ACTIVIDADES_REALIZA_CLIENTE
+   drop constraint FK_ACTIVIDA_CLIENTE
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CONTRATO') and o.name = 'FK_CONTRATO_CLIENTE_R_CURSO')
+alter table CONTRATO
+   drop constraint FK_CONTRATO_CLIENTE_R_CURSO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CONTRATO') and o.name = 'FK_CONTRATO_EJECUTIVO_EJECUTIV')
+alter table CONTRATO
+   drop constraint FK_CONTRATO_EJECUTIVO_EJECUTIV
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CONTRATO') and o.name = 'FK_CONTRATO_ESTADO_DE_ESTADO_C')
+alter table CONTRATO
+   drop constraint FK_CONTRATO_ESTADO_DE_ESTADO_C
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CONTRATO') and o.name = 'FK_CONTRATO_PAQUETE_E_PAQUETE_')
+alter table CONTRATO
+   drop constraint FK_CONTRATO_PAQUETE_E_PAQUETE_
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CONTRATO') and o.name = 'FK_CONTRATO_RELATIONS_MODALIDA')
+alter table CONTRATO
+   drop constraint FK_CONTRATO_RELATIONS_MODALIDA
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CUENTA') and o.name = 'FK_CUENTA_CUENTA_EN_BANCO')
+alter table CUENTA
+   drop constraint FK_CUENTA_CUENTA_EN_BANCO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CURSO') and o.name = 'FK_CURSO_COLEGIO_D_COLEGIO')
+alter table CURSO
+   drop constraint FK_CURSO_COLEGIO_D_COLEGIO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('CURSO') and o.name = 'FK_CURSO_USUARIO_C_USUARIO')
+alter table CURSO
+   drop constraint FK_CURSO_USUARIO_C_USUARIO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('DEPOSITO') and o.name = 'FK_DEPOSITO_DEPOSITO_CURSO')
+alter table DEPOSITO
+   drop constraint FK_DEPOSITO_DEPOSITO_CURSO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('DEPOSITO') and o.name = 'FK_DEPOSITO_DEPOSITO2_CUENTA')
+alter table DEPOSITO
+   drop constraint FK_DEPOSITO_DEPOSITO2_CUENTA
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('DETALLE_ESTADIA') and o.name = 'FK_DETALLE__DETALLE_E_PAQUETE_')
+alter table DETALLE_ESTADIA
+   drop constraint FK_DETALLE__DETALLE_E_PAQUETE_
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('DETALLE_ESTADIA') and o.name = 'FK_DETALLE__DETALLE_E_ESTADIA')
+alter table DETALLE_ESTADIA
+   drop constraint FK_DETALLE__DETALLE_E_ESTADIA
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('DETALLE_VIAJES') and o.name = 'FK_DETALLE__DETALLE_V_PAQUETE_')
+alter table DETALLE_VIAJES
+   drop constraint FK_DETALLE__DETALLE_V_PAQUETE_
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('DETALLE_VIAJES') and o.name = 'FK_DETALLE__DETALLE_V_DESTINO')
+alter table DETALLE_VIAJES
+   drop constraint FK_DETALLE__DETALLE_V_DESTINO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('SEGURO') and o.name = 'FK_SEGURO_SERVICIO__ASEGURAD')
+alter table SEGURO
+   drop constraint FK_SEGURO_SERVICIO__ASEGURAD
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('SERVICIOS_DE_TERCEROS') and o.name = 'FK_SERVICIO_BENEFICIO_BENEFICI')
+alter table SERVICIOS_DE_TERCEROS
+   drop constraint FK_SERVICIO_BENEFICIO_BENEFICI
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('SERVICIOS_DE_TERCEROS') and o.name = 'FK_SERVICIO_SEGUROS_C_SEGURO')
+alter table SERVICIOS_DE_TERCEROS
+   drop constraint FK_SERVICIO_SEGUROS_C_SEGURO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('SERVICIOS_DE_TERCEROS') and o.name = 'FK_SERVICIO_SERVICIOS_CONTRATO')
+alter table SERVICIOS_DE_TERCEROS
+   drop constraint FK_SERVICIO_SERVICIOS_CONTRATO
+go
+
+if exists (select 1
+   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
+   where r.fkeyid = object_id('USUARIO') and o.name = 'FK_USUARIO_USUARIO_C_CURSO')
+alter table USUARIO
+   drop constraint FK_USUARIO_USUARIO_C_CURSO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ACTIVIDAD')
+            and   type = 'U')
+   drop table ACTIVIDAD
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ACTIVIDADES')
+            and   type = 'U')
+   drop table ACTIVIDADES
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('ACTIVIDADES_EN_PAQUETE')
+            and   name  = 'FK_ID_PAQUETE'
+            and   indid > 0
+            and   indid < 255)
+   drop index ACTIVIDADES_EN_PAQUETE.FK_ID_PAQUETE
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('ACTIVIDADES_EN_PAQUETE')
+            and   name  = 'FK_ID_ACTIVIDAD'
+            and   indid > 0
+            and   indid < 255)
+   drop index ACTIVIDADES_EN_PAQUETE.FK_ID_ACTIVIDAD
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ACTIVIDADES_EN_PAQUETE')
+            and   type = 'U')
+   drop table ACTIVIDADES_EN_PAQUETE
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('ACTIVIDADES_REALIZA_CLIENTE')
+            and   name  = 'FK_ID_CURSO'
+            and   indid > 0
+            and   indid < 255)
+   drop index ACTIVIDADES_REALIZA_CLIENTE.FK_ID_CURSO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('ACTIVIDADES_REALIZA_CLIENTE')
+            and   name  = 'FK_NRO_ACTIVIDAD'
+            and   indid > 0
+            and   indid < 255)
+   drop index ACTIVIDADES_REALIZA_CLIENTE.FK_NRO_ACTIVIDAD
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ACTIVIDADES_REALIZA_CLIENTE')
+            and   type = 'U')
+   drop table ACTIVIDADES_REALIZA_CLIENTE
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ASEGURADORA')
+            and   type = 'U')
+   drop table ASEGURADORA
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('BANCO')
+            and   type = 'U')
+   drop table BANCO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('BENEFICIO')
+            and   type = 'U')
+   drop table BENEFICIO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('COLEGIO')
+            and   type = 'U')
+   drop table COLEGIO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CONTRATO')
+            and   name  = 'FK_ID_ESTADO'
+            and   indid > 0
+            and   indid < 255)
+   drop index CONTRATO.FK_ID_ESTADO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CONTRATO')
+            and   name  = 'FK_ID_MODALIDAD'
+            and   indid > 0
+            and   indid < 255)
+   drop index CONTRATO.FK_ID_MODALIDAD
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CONTRATO')
+            and   name  = 'FK_ID_PAQUETE'
+            and   indid > 0
+            and   indid < 255)
+   drop index CONTRATO.FK_ID_PAQUETE
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CONTRATO')
+            and   name  = 'FK_ID_CURSO'
+            and   indid > 0
+            and   indid < 255)
+   drop index CONTRATO.FK_ID_CURSO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CONTRATO')
+            and   name  = 'FK_ID_EJECUTIVO'
+            and   indid > 0
+            and   indid < 255)
+   drop index CONTRATO.FK_ID_EJECUTIVO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('CONTRATO')
+            and   type = 'U')
+   drop table CONTRATO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CUENTA')
+            and   name  = 'FK_ID_BANCO'
+            and   indid > 0
+            and   indid < 255)
+   drop index CUENTA.FK_ID_BANCO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('CUENTA')
+            and   type = 'U')
+   drop table CUENTA
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CURSO')
+            and   name  = 'FK_ID_COLEGIO'
+            and   indid > 0
+            and   indid < 255)
+   drop index CURSO.FK_ID_COLEGIO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('CURSO')
+            and   name  = 'FK_NOM_USUARIO'
+            and   indid > 0
+            and   indid < 255)
+   drop index CURSO.FK_NOM_USUARIO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('CURSO')
+            and   type = 'U')
+   drop table CURSO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('DEPOSITO')
+            and   name  = 'FK_ID_CURSO'
+            and   indid > 0
+            and   indid < 255)
+   drop index DEPOSITO.FK_ID_CURSO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('DEPOSITO')
+            and   name  = 'FK_NRO_CUENTA'
+            and   indid > 0
+            and   indid < 255)
+   drop index DEPOSITO.FK_NRO_CUENTA
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('DEPOSITO')
+            and   type = 'U')
+   drop table DEPOSITO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('DESTINO')
+            and   type = 'U')
+   drop table DESTINO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('DETALLE_ESTADIA')
+            and   name  = 'FK_ID_PAQUETE'
+            and   indid > 0
+            and   indid < 255)
+   drop index DETALLE_ESTADIA.FK_ID_PAQUETE
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('DETALLE_ESTADIA')
+            and   name  = 'FK_ID_ESTADIA'
+            and   indid > 0
+            and   indid < 255)
+   drop index DETALLE_ESTADIA.FK_ID_ESTADIA
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('DETALLE_ESTADIA')
+            and   type = 'U')
+   drop table DETALLE_ESTADIA
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('DETALLE_VIAJES')
+            and   name  = 'FK_ID_PAQUETE'
+            and   indid > 0
+            and   indid < 255)
+   drop index DETALLE_VIAJES.FK_ID_PAQUETE
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('DETALLE_VIAJES')
+            and   name  = 'FK_ID_DESTINO'
+            and   indid > 0
+            and   indid < 255)
+   drop index DETALLE_VIAJES.FK_ID_DESTINO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('DETALLE_VIAJES')
+            and   type = 'U')
+   drop table DETALLE_VIAJES
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('EJECUTIVO')
+            and   type = 'U')
+   drop table EJECUTIVO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ESTADIA')
+            and   type = 'U')
+   drop table ESTADIA
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('ESTADO_CONTRATO')
+            and   type = 'U')
+   drop table ESTADO_CONTRATO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('MODALIDAD_PAGO')
+            and   type = 'U')
+   drop table MODALIDAD_PAGO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('PAQUETE_TURISTICO')
+            and   type = 'U')
+   drop table PAQUETE_TURISTICO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('SEGURO')
+            and   name  = 'FK_RUN_ASEGURADORA'
+            and   indid > 0
+            and   indid < 255)
+   drop index SEGURO.FK_RUN_ASEGURADORA
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('SEGURO')
+            and   type = 'U')
+   drop table SEGURO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('SERVICIOS_DE_TERCEROS')
+            and   name  = 'FK_ID_BENEFICIO'
+            and   indid > 0
+            and   indid < 255)
+   drop index SERVICIOS_DE_TERCEROS.FK_ID_BENEFICIO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('SERVICIOS_DE_TERCEROS')
+            and   name  = 'FK_ID_SEGURO'
+            and   indid > 0
+            and   indid < 255)
+   drop index SERVICIOS_DE_TERCEROS.FK_ID_SEGURO
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('SERVICIOS_DE_TERCEROS')
+            and   name  = 'FK_NRO_CONTRATO'
+            and   indid > 0
+            and   indid < 255)
+   drop index SERVICIOS_DE_TERCEROS.FK_NRO_CONTRATO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('SERVICIOS_DE_TERCEROS')
+            and   type = 'U')
+   drop table SERVICIOS_DE_TERCEROS
+go
+
+if exists (select 1
+            from  sysindexes
+           where  id    = object_id('USUARIO')
+            and   name  = 'FK_ID_CURSO'
+            and   indid > 0
+            and   indid < 255)
+   drop index USUARIO.FK_ID_CURSO
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('USUARIO')
+            and   type = 'U')
+   drop table USUARIO
+go
+
+/*==============================================================*/
+/* Table: ACTIVIDAD                                             */
+/*==============================================================*/
+create table ACTIVIDAD (
+   ID_ACTIVIDAD         numeric(3)           not null,
+   NOM_ACTIVIDAD        varchar(15)          not null,
+   constraint PK_ACTIVIDAD primary key nonclustered (ID_ACTIVIDAD)
+)
+go
+
+/*==============================================================*/
+/* Table: ACTIVIDADES                                           */
+/*==============================================================*/
+create table ACTIVIDADES (
+   NRO_ACTIVIDAD        numeric(10)          not null,
+   DESCRIPCION_ACTIVIDAD varchar(30)          not null,
+   constraint PK_ACTIVIDADES primary key nonclustered (NRO_ACTIVIDAD)
+)
+go
+
+/*==============================================================*/
+/* Table: ACTIVIDADES_EN_PAQUETE                                */
+/*==============================================================*/
+create table ACTIVIDADES_EN_PAQUETE (
+   ID_PAQUETE           numeric(15)          not null,
+   ID_ACTIVIDAD         numeric(3)           not null,
+   FEC_ACTIVIDAD        datetime             not null,
+   constraint PK_ACTIVIDADES_EN_PAQUETE primary key nonclustered (ID_PAQUETE, ID_ACTIVIDAD)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_ACTIVIDAD                                       */
+/*==============================================================*/
+create index FK_ID_ACTIVIDAD on ACTIVIDADES_EN_PAQUETE (
+ID_ACTIVIDAD ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_PAQUETE                                         */
+/*==============================================================*/
+create index FK_ID_PAQUETE on ACTIVIDADES_EN_PAQUETE (
+ID_PAQUETE ASC
+)
+go
+
+/*==============================================================*/
+/* Table: ACTIVIDADES_REALIZA_CLIENTE                           */
+/*==============================================================*/
+create table ACTIVIDADES_REALIZA_CLIENTE (
+   ID_CURSO             numeric(10)          not null,
+   NRO_ACTIVIDAD        numeric(10)          not null,
+   RECAUDACION_ACTIVIDAD numeric(10)          not null,
+   FEC_INI_ACTIVIDAD    datetime             not null,
+   FEC_TERM_ACTIVIDAD   datetime             not null,
+   constraint PK_ACTIVIDADES_REALIZA_CLIENTE primary key nonclustered (ID_CURSO, NRO_ACTIVIDAD)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_NRO_ACTIVIDAD                                      */
+/*==============================================================*/
+create index FK_NRO_ACTIVIDAD on ACTIVIDADES_REALIZA_CLIENTE (
+NRO_ACTIVIDAD ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_CURSO                                           */
+/*==============================================================*/
+create index FK_ID_CURSO on ACTIVIDADES_REALIZA_CLIENTE (
+ID_CURSO ASC
+)
+go
+
+/*==============================================================*/
+/* Table: ASEGURADORA                                           */
+/*==============================================================*/
+create table ASEGURADORA (
+   RUN_ASEGURADORA      varchar(10)          not null,
+   RAZON_SOCIAL         varchar(30)          not null,
+   constraint PK_ASEGURADORA primary key nonclustered (RUN_ASEGURADORA)
+)
+go
+
+/*==============================================================*/
+/* Table: BANCO                                                 */
+/*==============================================================*/
+create table BANCO (
+   ID_BANCO             numeric(5)           not null,
+   NOM_BANCO            varchar(30)          not null,
+   constraint PK_BANCO primary key nonclustered (ID_BANCO)
+)
+go
+
+/*==============================================================*/
+/* Table: BENEFICIO                                             */
+/*==============================================================*/
+create table BENEFICIO (
+   ID_BENEFICIO         numeric(3)           not null,
+   NOM_BENEFICIO        varchar(30)          not null,
+   COSTO                numeric(30)          not null,
+   constraint PK_BENEFICIO primary key nonclustered (ID_BENEFICIO)
+)
+go
+
+/*==============================================================*/
+/* Table: COLEGIO                                               */
+/*==============================================================*/
+create table COLEGIO (
+   ID_COLEGIO           numeric(10)          not null,
+   NOM_COLEGIO          varchar(30)          not null,
+   constraint PK_COLEGIO primary key nonclustered (ID_COLEGIO)
+)
+go
+
+/*==============================================================*/
+/* Table: CONTRATO                                              */
+/*==============================================================*/
+create table CONTRATO (
+   NRO_CONTRATO         numeric(10)          not null,
+   FEC_INI_CONTRATO     datetime             not null,
+   FEC_TERM_CONTRATO    datetime             not null,
+   FEC_VIAJE            datetime             not null,
+   CANT_PARTICIPANTES   numeric(4)           not null,
+   CONDICIONES          varchar(500)         not null,
+   ID_PAQUETE           numeric(15)          not null,
+   ID_EJECUTIVO         numeric(4)           not null,
+   ID_CURSO             numeric(10)          not null,
+   ID_ESTADO            numeric(10)          not null,
+   ID_MODALIDAD         numeric(2)           not null,
+   constraint PK_CONTRATO primary key nonclustered (NRO_CONTRATO)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_EJECUTIVO                                       */
+/*==============================================================*/
+create index FK_ID_EJECUTIVO on CONTRATO (
+ID_EJECUTIVO ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_CURSO                                           */
+/*==============================================================*/
+create index FK_ID_CURSO on CONTRATO (
+ID_CURSO ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_PAQUETE                                         */
+/*==============================================================*/
+create index FK_ID_PAQUETE on CONTRATO (
+ID_PAQUETE ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_MODALIDAD                                       */
+/*==============================================================*/
+create index FK_ID_MODALIDAD on CONTRATO (
+ID_MODALIDAD ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_ESTADO                                          */
+/*==============================================================*/
+create index FK_ID_ESTADO on CONTRATO (
+ID_ESTADO ASC
+)
+go
+
+/*==============================================================*/
+/* Table: CUENTA                                                */
+/*==============================================================*/
+create table CUENTA (
+   NRO_CUENTA           numeric(10)          not null,
+   ID_BANCO             numeric(5)           not null,
+   NRO_CEDULA_TITULAR   varchar(10)          not null,
+   MONTO_AHORRADO       numeric(15)          not null,
+   FEC_APERTURA         datetime             not null,
+   constraint PK_CUENTA primary key nonclustered (NRO_CUENTA)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_BANCO                                           */
+/*==============================================================*/
+create index FK_ID_BANCO on CUENTA (
+ID_BANCO ASC
+)
+go
+
+/*==============================================================*/
+/* Table: CURSO                                                 */
+/*==============================================================*/
+create table CURSO (
+   ID_CURSO             numeric(10)          not null,
+   ID_COLEGIO           numeric(10)          not null,
+   RUT_REPRESENTANTE    varchar(10)          not null,
+   CURSO                varchar(2)           not null,
+   CORREO_REPRESENTANTE varchar(45)          not null,
+   NRO_ALUMNOS          numeric(3)           not null,
+   NOM_USUARIO          varchar(30)          null,
+   constraint PK_CURSO primary key nonclustered (ID_CURSO)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_NOM_USUARIO                                        */
+/*==============================================================*/
+create index FK_NOM_USUARIO on CURSO (
+NOM_USUARIO ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_COLEGIO                                         */
+/*==============================================================*/
+create index FK_ID_COLEGIO on CURSO (
+ID_COLEGIO ASC
+)
+go
+
+/*==============================================================*/
+/* Table: DEPOSITO                                              */
+/*==============================================================*/
+create table DEPOSITO (
+   ID_CURSO             numeric(10)          not null,
+   NRO_CUENTA           numeric(10)          not null,
+   FEC_DEPOSITO         datetime             not null,
+   MONTO_DEPOSITO       numeric(20)          not null,
+   constraint PK_DEPOSITO primary key nonclustered (ID_CURSO, NRO_CUENTA)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_NRO_CUENTA                                         */
+/*==============================================================*/
+create index FK_NRO_CUENTA on DEPOSITO (
+NRO_CUENTA ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_CURSO                                           */
+/*==============================================================*/
+create index FK_ID_CURSO on DEPOSITO (
+ID_CURSO ASC
+)
+go
+
+/*==============================================================*/
+/* Table: DESTINO                                               */
+/*==============================================================*/
+create table DESTINO (
+   ID_DESTINO           numeric(10)          not null,
+   NOM_DESTINO          varchar(30)          not null,
+   constraint PK_DESTINO primary key nonclustered (ID_DESTINO)
+)
+go
+
+/*==============================================================*/
+/* Table: DETALLE_ESTADIA                                       */
+/*==============================================================*/
+create table DETALLE_ESTADIA (
+   ID_PAQUETE           numeric(15)          not null,
+   ID_ESTADIA           numeric(10)          not null,
+   FEC_INI_ESTADIA      datetime             not null,
+   FEC_RETIRO_ESTADIA   datetime             not null,
+   constraint PK_DETALLE_ESTADIA primary key nonclustered (ID_PAQUETE, ID_ESTADIA)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_ESTADIA                                         */
+/*==============================================================*/
+create index FK_ID_ESTADIA on DETALLE_ESTADIA (
+ID_ESTADIA ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_PAQUETE                                         */
+/*==============================================================*/
+create index FK_ID_PAQUETE on DETALLE_ESTADIA (
+ID_PAQUETE ASC
+)
+go
+
+/*==============================================================*/
+/* Table: DETALLE_VIAJES                                        */
+/*==============================================================*/
+create table DETALLE_VIAJES (
+   ID_PAQUETE           numeric(15)          not null,
+   ID_DESTINO           numeric(10)          not null,
+   FEC_SALIDA           datetime             not null,
+   FEC_REGRESO          datetime             not null,
+   constraint PK_DETALLE_VIAJES primary key nonclustered (ID_PAQUETE, ID_DESTINO)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_DESTINO                                         */
+/*==============================================================*/
+create index FK_ID_DESTINO on DETALLE_VIAJES (
+ID_DESTINO ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_PAQUETE                                         */
+/*==============================================================*/
+create index FK_ID_PAQUETE on DETALLE_VIAJES (
+ID_PAQUETE ASC
+)
+go
+
+/*==============================================================*/
+/* Table: EJECUTIVO                                             */
+/*==============================================================*/
+create table EJECUTIVO (
+   ID_EJECUTIVO         numeric(4)           not null,
+   RUT_EJECUTIVO        varchar(10)          not null,
+   NOM_EJECUTIVO        varchar(45)          not null,
+   APPA_EJECUTIVO       varchar(30)          not null,
+   APMA_EJECUTIVO       varchar(30)          not null,
+   FEC_INGRESO          datetime             not null,
+   FEC_NACIMIENTO       datetime             not null,
+   CORREO_EJECUTIVO     varchar(50)          not null,
+   constraint PK_EJECUTIVO primary key nonclustered (ID_EJECUTIVO)
+)
+go
+
+/*==============================================================*/
+/* Table: ESTADIA                                               */
+/*==============================================================*/
+create table ESTADIA (
+   ID_ESTADIA           numeric(10)          not null,
+   NOM_ESTADIA          varchar(10)          not null,
+   VALOR_ESTADIA        numeric(15)          not null,
+   NRO_DORMITORIOS      numeric(5)           not null,
+   constraint PK_ESTADIA primary key nonclustered (ID_ESTADIA)
+)
+go
+
+/*==============================================================*/
+/* Table: ESTADO_CONTRATO                                       */
+/*==============================================================*/
+create table ESTADO_CONTRATO (
+   ID_ESTADO            numeric(10)          not null,
+   NOM_ESTADO           varchar(15)          not null,
+   constraint PK_ESTADO_CONTRATO primary key nonclustered (ID_ESTADO)
+)
+go
+
+/*==============================================================*/
+/* Table: MODALIDAD_PAGO                                        */
+/*==============================================================*/
+create table MODALIDAD_PAGO (
+   ID_MODALIDAD         numeric(2)           not null,
+   NOM_MODALIDAD        varchar(30)          not null,
+   constraint PK_MODALIDAD_PAGO primary key nonclustered (ID_MODALIDAD)
+)
+go
+
+/*==============================================================*/
+/* Table: PAQUETE_TURISTICO                                     */
+/*==============================================================*/
+create table PAQUETE_TURISTICO (
+   ID_PAQUETE           numeric(15)          not null,
+   NOM_PAQUETE          varchar(30)          not null,
+   COSTO_PAQUETE        numeric(15)          not null,
+   constraint PK_PAQUETE_TURISTICO primary key nonclustered (ID_PAQUETE)
+)
+go
+
+/*==============================================================*/
+/* Table: SEGURO                                                */
+/*==============================================================*/
+create table SEGURO (
+   ID_SEGURO            numeric(3)           not null,
+   RUN_ASEGURADORA      varchar(10)          not null,
+   NOM_SEGURO           varchar(30)          not null,
+   POLIZA               numeric(3)           not null,
+   constraint PK_SEGURO primary key nonclustered (ID_SEGURO)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_RUN_ASEGURADORA                                    */
+/*==============================================================*/
+create index FK_RUN_ASEGURADORA on SEGURO (
+RUN_ASEGURADORA ASC
+)
+go
+
+/*==============================================================*/
+/* Table: SERVICIOS_DE_TERCEROS                                 */
+/*==============================================================*/
+create table SERVICIOS_DE_TERCEROS (
+   ID_SERVICIO          numeric(10)          not null,
+   NRO_CONTRATO         numeric(10)          not null,
+   ID_SEGURO            numeric(3)           not null,
+   ID_BENEFICIO         numeric(3)           not null,
+   constraint PK_SERVICIOS_DE_TERCEROS primary key nonclustered (ID_SERVICIO)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_NRO_CONTRATO                                       */
+/*==============================================================*/
+create index FK_NRO_CONTRATO on SERVICIOS_DE_TERCEROS (
+NRO_CONTRATO ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_SEGURO                                          */
+/*==============================================================*/
+create index FK_ID_SEGURO on SERVICIOS_DE_TERCEROS (
+ID_SEGURO ASC
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_BENEFICIO                                       */
+/*==============================================================*/
+create index FK_ID_BENEFICIO on SERVICIOS_DE_TERCEROS (
+ID_BENEFICIO ASC
+)
+go
+
+/*==============================================================*/
+/* Table: USUARIO                                               */
+/*==============================================================*/
+create table USUARIO (
+   NOM_USUARIO          varchar(30)          not null,
+   ID_CURSO             numeric(10)          not null,
+   CONTRASENA           varchar(30)          not null,
+   PREG_SECRETA         varchar(30)          not null,
+   RESPUESTA            varchar(30)          not null,
+   TIPO                 varchar(30)          not null,
+   constraint PK_USUARIO primary key nonclustered (NOM_USUARIO)
+)
+go
+
+/*==============================================================*/
+/* Index: FK_ID_CURSO                                           */
+/*==============================================================*/
+create index FK_ID_CURSO on USUARIO (
+ID_CURSO ASC
+)
+go
+
+alter table ACTIVIDADES_EN_PAQUETE
+   add constraint FK_ACTIVIDA_ACTIVIDAD_PAQUETE_ foreign key (ID_PAQUETE)
+      references PAQUETE_TURISTICO (ID_PAQUETE)
+go
+
+alter table ACTIVIDADES_EN_PAQUETE
+   add constraint FK_ACTIVIDA_ACTIVIDAD_ACTIVIDA foreign key (ID_ACTIVIDAD)
+      references ACTIVIDAD (ID_ACTIVIDAD)
+go
+
+alter table ACTIVIDADES_REALIZA_CLIENTE
+   add constraint FK_ACTIVIDA_ACTIVIDAD_CURSO foreign key (ID_CURSO)
+      references CURSO (ID_CURSO)
+go
+
+alter table ACTIVIDADES_REALIZA_CLIENTE
+   add constraint FK_ACTIVIDA_CLIENTE foreign key (NRO_ACTIVIDAD)
+      references ACTIVIDADES (NRO_ACTIVIDAD)
+go
+
+alter table CONTRATO
+   add constraint FK_CONTRATO_CLIENTE_R_CURSO foreign key (ID_CURSO)
+      references CURSO (ID_CURSO)
+go
+
+alter table CONTRATO
+   add constraint FK_CONTRATO_EJECUTIVO_EJECUTIV foreign key (ID_EJECUTIVO)
+      references EJECUTIVO (ID_EJECUTIVO)
+go
+
+alter table CONTRATO
+   add constraint FK_CONTRATO_ESTADO_DE_ESTADO_C foreign key (ID_ESTADO)
+      references ESTADO_CONTRATO (ID_ESTADO)
+go
+
+alter table CONTRATO
+   add constraint FK_CONTRATO_PAQUETE_E_PAQUETE_ foreign key (ID_PAQUETE)
+      references PAQUETE_TURISTICO (ID_PAQUETE)
+go
+
+alter table CONTRATO
+   add constraint FK_CONTRATO_RELATIONS_MODALIDA foreign key (ID_MODALIDAD)
+      references MODALIDAD_PAGO (ID_MODALIDAD)
+go
+
+alter table CUENTA
+   add constraint FK_CUENTA_CUENTA_EN_BANCO foreign key (ID_BANCO)
+      references BANCO (ID_BANCO)
+go
+
+alter table CURSO
+   add constraint FK_CURSO_COLEGIO_D_COLEGIO foreign key (ID_COLEGIO)
+      references COLEGIO (ID_COLEGIO)
+go
+
+alter table CURSO
+   add constraint FK_CURSO_USUARIO_C_USUARIO foreign key (NOM_USUARIO)
+      references USUARIO (NOM_USUARIO)
+go
+
+alter table DEPOSITO
+   add constraint FK_DEPOSITO_DEPOSITO_CURSO foreign key (ID_CURSO)
+      references CURSO (ID_CURSO)
+go
+
+alter table DEPOSITO
+   add constraint FK_DEPOSITO_DEPOSITO2_CUENTA foreign key (NRO_CUENTA)
+      references CUENTA (NRO_CUENTA)
+go
+
+alter table DETALLE_ESTADIA
+   add constraint FK_DETALLE__DETALLE_E_PAQUETE_ foreign key (ID_PAQUETE)
+      references PAQUETE_TURISTICO (ID_PAQUETE)
+go
+
+alter table DETALLE_ESTADIA
+   add constraint FK_DETALLE__DETALLE_E_ESTADIA foreign key (ID_ESTADIA)
+      references ESTADIA (ID_ESTADIA)
+go
+
+alter table DETALLE_VIAJES
+   add constraint FK_DETALLE__DETALLE_V_PAQUETE_ foreign key (ID_PAQUETE)
+      references PAQUETE_TURISTICO (ID_PAQUETE)
+go
+
+alter table DETALLE_VIAJES
+   add constraint FK_DETALLE__DETALLE_V_DESTINO foreign key (ID_DESTINO)
+      references DESTINO (ID_DESTINO)
+go
+
+alter table SEGURO
+   add constraint FK_SEGURO_SERVICIO__ASEGURAD foreign key (RUN_ASEGURADORA)
+      references ASEGURADORA (RUN_ASEGURADORA)
+go
+
+alter table SERVICIOS_DE_TERCEROS
+   add constraint FK_SERVICIO_BENEFICIO_BENEFICI foreign key (ID_BENEFICIO)
+      references BENEFICIO (ID_BENEFICIO)
+go
+
+alter table SERVICIOS_DE_TERCEROS
+   add constraint FK_SERVICIO_SEGUROS_C_SEGURO foreign key (ID_SEGURO)
+      references SEGURO (ID_SEGURO)
+go
+
+alter table SERVICIOS_DE_TERCEROS
+   add constraint FK_SERVICIO_SERVICIOS_CONTRATO foreign key (NRO_CONTRATO)
+      references CONTRATO (NRO_CONTRATO)
+go
+
+alter table USUARIO
+   add constraint FK_USUARIO_USUARIO_C_CURSO foreign key (ID_CURSO)
+      references CURSO (ID_CURSO)
+go

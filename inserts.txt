@@ -1,0 +1,54 @@
+inserts necesarios.
+
+insert into estado_contrato values (1, 'Aprobado');
+insert into estado_contrato values (2, 'En proceso');
+insert into estado_contrato values (3, 'Cancelado');
+insert into PAQUETE_TURISTICO values(1,'Vuela vuela',200000);
+insert into PAQUETE_TURISTICO values(2,'No hace falta equipaje',390000);
+insert into PAQUETE_TURISTICO values(3,'Campeonardo',250000);
+insert into PAQUETE_TURISTICO values(4,'Perdiste loco',500000);
+insert into PAQUETE_TURISTICO values(5,'Tenedor con cuchillo',1200000);
+insert into MODALIDAD_PAGO values(1,'Deposito');
+insert into MODALIDAD_PAGO values(2,'Cheque');
+insert into MODALIDAD_PAGO values(3,'En efectivo');
+
+insert into COLEGIO values(2,'Los buenos');
+insert into COLEGIO values(3,'Liceo Republica de siria');
+insert into COLEGIO values(4,'Colegio por defecto');
+insert into COLEGIO values(5,'Colegio 1');
+insert into colegio values(6,'Este es bueno');
+
+insert into CLIENTE values(2,2,'12345678-1','4a','fceaurrutia@gmail.com');
+insert into CLIENTE values(3,3,'12345678-1','4a','fceaurrutia@gmail.com');
+insert into CLIENTE values(4,4,'12345678-1','4a','fceaurrutia@gmail.com');
+insert into CLIENTE values(5,5,'12345678-1','4a','fceaurrutia@gmail.com');
+insert into CLIENTE values(6,3,'12345678-1','4a','fceaurrutia@gmail.com');
+
+insert into EJECUTIVO values(1,'23876341-1','joaquin','gonazalez','silva',02/03/1996,23/03/1971,'correo1@gmail.com');
+insert into EJECUTIVO values(2,'18654379-2','ronal','olate','salamanca',01/07/1995,21/07/1970 ,'correo2@gmail.com');
+insert into EJECUTIVO values(3,'18756321-k','Diego','lopez','rios',25/08/2000,11/08/2075 ,'correo3@gmail.com');
+insert into EJECUTIVO values(4,'17555439-4','Nicolas','lavin','leon',15/12/1998,10/12/1973,'correo4@gmail.com');
+insert into EJECUTIVO values(5,'16998326-1','Juan','vargas','traslavina',19/01/1993,01/01/1968,'correo5@gmail.com');
+
+
+insert into CONTRATO values (1,04/07/2018,04/07/2020,03/06/2020,'nada',5,1,3,1,1);
+insert into CONTRATO values (2,04/07/2018,04/07/2020,03/06/2020,'nada',4,2,2,1,1);
+insert into CONTRATO values (3,04/07/2018,04/07/2020,03/06/2020,'nada',3,3,4,1,1);
+insert into CONTRATO values (4,04/07/2018,04/07/2020,03/06/2020,'nada',2,4,5,1,1);
+insert into CONTRATO values (5,04/07/2018,04/07/2020,03/06/2020,'nada',1,5,6,1,1);
+
+
+insert into USUARIO values('joje','esaes','¿animal favorito?','cocodrilo','admin',null,1);
+insert into USUARIO values('pepe','micontra','¿dulce que odio?','paleta','admin',null,2);
+insert into USUARIO values('joaco','secreta','¿a quien odio?','al cea','admin',null,3);
+insert into USUARIO values('ronal','nomequiero','¿como me llamo?','Ronald','admin',null,4);
+insert into USUARIO values('nico','soymuylindo','¿que tan bonito soy?','hermoso','admin',null,5);
+insert into USUARIO values('hernestito','123','edad','1000','cliente',2,null);
+insert into USUARIO values('cea','123','mascota','perro','cliente',3,null);
+insert into USUARIO values('akinox','123','notas','5','cliente',4,null);
+insert into USUARIO values('zobex','123','¿en que trabajo?','dormir','cliente',5,null);
+insert into USUARIO values('misionario','123','¿a que juego?','nada','cliente',6,null);
+/*
+ALTER TABLE cliente
+DROP COLUMN cant_alumnos;
+*/

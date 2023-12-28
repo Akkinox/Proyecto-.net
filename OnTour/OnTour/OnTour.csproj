@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16E0F2DF-8DA4-4237-89BD-904C8B2276CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OnTour</RootNamespace>
+    <AssemblyName>OnTour</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\..\..\..\..\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.Web, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\DAO.cs" />
+    <Compile Include="Vistas\Admin\AgregarSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Admin\AgregarSeguro.Designer.cs">
+      <DependentUpon>AgregarSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Admin\CrearContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Admin\CrearContrato.Designer.cs">
+      <DependentUpon>CrearContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Admin\MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Admin\MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Cliente\Actividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Cliente\Actividades.Designer.cs">
+      <DependentUpon>Actividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Admin\Seguros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Admin\Seguros.Designer.cs">
+      <DependentUpon>Seguros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\Cliente\Contrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Cliente\Contrato.Designer.cs">
+      <DependentUpon>Contrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Cliente\Correo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Cliente\Correo.Designer.cs">
+      <DependentUpon>Correo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Cliente\MostrarContratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Cliente\MostrarContratos.Designer.cs">
+      <DependentUpon>MostrarContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Cliente\OpcionesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Cliente\OpcionesCliente.Designer.cs">
+      <DependentUpon>OpcionesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\MenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\MenuCliente.Designer.cs">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Recuperate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Recuperate.Designer.cs">
+      <DependentUpon>Recuperate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\Admin\AgregarSeguro.resx">
+      <DependentUpon>AgregarSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Admin\CrearContrato.resx">
+      <DependentUpon>CrearContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Admin\MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Cliente\Actividades.resx">
+      <DependentUpon>Actividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Admin\Seguros.resx">
+      <DependentUpon>Seguros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vistas\Cliente\Contrato.resx">
+      <DependentUpon>Contrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Cliente\Correo.resx">
+      <DependentUpon>Correo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Cliente\MostrarContratos.resx">
+      <DependentUpon>MostrarContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Cliente\OpcionesCliente.resx">
+      <DependentUpon>OpcionesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\MenuCliente.resx">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Recuperate.resx">
+      <DependentUpon>Recuperate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-shape_icon-icons.com_72487.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-shape_icon-icons.com_72487 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlocked-padlock-black-security-symbol_icon-icons.com_54444.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdasf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-desbloquear-2-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-masculino-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\754567.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-de-género-neutro-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-de-género-neutro-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-acuerdo-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-acuerdo-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-despegue-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-depósito-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendario-de-rasgar-las-hojas-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-montón-de-dinero-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mostrar-propiedad-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-volver-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancelar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-volver-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-deshacer-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-deshacer-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload-webpage_icon-icons.com_53905.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-archivo-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-seguridad-comprobado-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-información-del-sistema-64.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,85 @@
+C:\Users\mati\source\repos\OnTour\OnTour\bin\Debug\OnTour.exe
+C:\Users\mati\source\repos\OnTour\OnTour\bin\Debug\OnTour.pdb
+C:\Users\mati\source\repos\OnTour\OnTour\bin\Debug\MetroFramework.Design.dll
+C:\Users\mati\source\repos\OnTour\OnTour\bin\Debug\MetroFramework.dll
+C:\Users\mati\source\repos\OnTour\OnTour\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.csprojAssemblyReference.cache
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.Form1.resources
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.Properties.Resources.resources
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.csproj.GenerateResource.cache
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.csproj.CoreCompileInputs.cache
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.csproj.CopyComplete
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.exe
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.pdb
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Correo.resources
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.Vistas.MenuCliente.resources
+C:\Users\mati\source\repos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.OpcionesCliente.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\bin\Debug\OnTour.exe
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\bin\Debug\OnTour.pdb
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\bin\Debug\MetroFramework.Design.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\bin\Debug\MetroFramework.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.csprojAssemblyReference.cache
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Form1.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Properties.Resources.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Correo.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.OpcionesCliente.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Recuperar.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Vistas.MenuCliente.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.csproj.GenerateResource.cache
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.csproj.CoreCompileInputs.cache
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.csproj.CopyComplete
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.exe
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.pdb
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Contrato.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.MostrarContratos.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csprojAssemblyReference.cache
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Form1.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Properties.Resources.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Contrato.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Correo.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.MostrarContratos.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.OpcionesCliente.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.MenuCliente.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.GenerateResource.cache
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.CoreCompileInputs.cache
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.exe
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.pdb
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\OnTour.exe
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\OnTour.pdb
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\MetroFramework.Design.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\MetroFramework.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\Oracle.DataAccess.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\bin\Debug\Oracle.Web.dll
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Admin.MenuAdmin.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Seguros.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.CopyComplete
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Actividades.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Admin.CrearContrato.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Admin.AgregarSeguro.resources
+C:\Users\mati\Desktop\Duoc\ingenieria de software\iconos\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Recuperate.resources
+C:\Users\ronal\Downloads\OnTour.final\Ontour.final\Ontour\Ontour\obj\Debug\OnTour.exe
+C:\Users\ronal\Downloads\OnTour.final\Ontour.final\Ontour\Ontour\obj\Debug\OnTour.pdb
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\bin\Debug\OnTour.exe
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\bin\Debug\OnTour.pdb
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\bin\Debug\MetroFramework.Design.dll
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\bin\Debug\MetroFramework.dll
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.AssemblyReference.cache
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Admin.AgregarSeguro.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Admin.CrearContrato.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Admin.MenuAdmin.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Actividades.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Seguros.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Form1.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Properties.Resources.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Contrato.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.Correo.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.MostrarContratos.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Cliente.OpcionesCliente.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.MenuCliente.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.Vistas.Recuperate.resources
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.GenerateResource.cache
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.CoreCompileInputs.cache
+C:\Users\ronal\Downloads\OnTour.final\OnTour.final\OnTour\OnTour\obj\Debug\OnTour.csproj.CopyComplete
